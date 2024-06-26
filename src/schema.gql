@@ -1,11 +1,20 @@
-scalar Text
+scalar BigInt
 
-type Post {
-  id: String!
-  author: String!
-  content: Text!
-  tag: String
-  tx_hash: String!
-  created_at: Int!
-  created_at_block: Int!
+type Liquity_Collateral {
+  id: ID!
+  trove: String!
+  user: String!
+  block: Int!
+  balance: BigInt!
+  count: Int!
+  timestamp: Int!
+}
+
+type Liquity_Daily_Collateral {
+  id: ID!
+  trove: String!
+  user: String!
+  block: Int!
+  balance: BigInt!
+  timestamp: Int!
 }
